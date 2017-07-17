@@ -1,6 +1,6 @@
 const express=require('express');
 
-const port=process.env.PORT |3000;
+const port=process.env.PORT ||3000;
 var app=express();
 
 app.get('/',(req,res)=>{
@@ -9,5 +9,5 @@ app.get('/',(req,res)=>{
 });
 
 app.listen(port,()=>{
-    console.log(`server is running on kay shett ${port}`);
+    console.log(`server is running on  ${port}`);
 });
